@@ -1,0 +1,39 @@
+import RPi.GPIO as GPIO
+import time
+
+
+def main():
+
+    print "executing script"
+
+    # tell the GPIO module that we want
+    # to use the chip's pin numbering scheme
+    GPIO.setmode(GPIO.BCM)
+    # setup pin 25 as an output
+#    GPIO.setup(25,GPIO.OUT)
+    GPIO.setup(4,GPIO.OUT)      #1
+    GPIO.setup(17,GPIO.OUT)     #2
+    GPIO.setup(27,GPIO.OUT)     #3
+    GPIO.setup(22,GPIO.OUT)     #4
+    # turn pin on
+ #   GPIO.output(25,True)
+    GPIO.output(4,True)
+    GPIO.output(17,True)
+    GPIO.output(27,True)
+    GPIO.output(22,True)
+    # sleep for 3 seconds
+    time.sleep(4)
+    # turn the pin off
+  #  GPIO.output(25,False)
+    GPIO.output(4,False)
+    GPIO.output(17,False)
+    GPIO.output(27,False)
+    GPIO.output(22,False)
+
+    time.sleep(1)
+
+    GPIO.cleanup()
+
+if __name__=="__main__":
+    main()
+    
