@@ -40,5 +40,18 @@
   on one line look for something like sdal, sdbl, sda2 etc
   that measn the device is located in /dev/sdal
   create directory under /media so you can mount the drive
-  sudo mkdir /media/usbstick
+ - sudo mkdir /media/usbstick
+  then mount the usb
+- sudo mount -t vfat -o uid=pi,gid=pi /dev/sdal /media/usbstick/
+then look at drive
+cd /media/usbstick/
+ls ~/
+sudo umount /media/usbstick
+
+2015-11-14
+testing BME280 with arduino,
+set code to line 32
+Adafruit_BME280 bme(BME_CS, BME_....
+
+2015
   
