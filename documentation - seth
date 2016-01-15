@@ -1,1 +1,17 @@
-
+2015-10-03
+  learning how to use raspberry pi. Connecting through SSH to pie. New pi has difficultyy loading lxsession - no icons appear 
+  - arduino: stk500_recv(): programmer is not responding, fixed. needed new cable.
+  
+2015-10-04
+  desinging prototype chassi on autocad.
+  
+2015-10-05 - 2015-11-01
+  complete plans for rover,
+  *runs from both raspberry pi and arduino connected by usb
+  *prototype made from vex, final copy machined from aluminum
+  *two separate power souces one for intelligence and one for the motors
+  * four motors tank steering
+  * BME280 for temp/pressure/humidity/altitude
+  *adafruits animometre for windspeed
+  *raspberry pi connected through wifi to laptop using putty
+  *arduino runs animometre and 
