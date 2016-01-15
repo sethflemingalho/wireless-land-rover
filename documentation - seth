@@ -14,4 +14,31 @@
   * BME280 for temp/pressure/humidity/altitude
   *adafruits animometre for windspeed
   *raspberry pi connected through wifi to laptop using putty
-  *arduino runs animometre and 
+  *arduino runs animometre and potentially the motors
+  *raspberry pi runs BME280 and the arduino and the wifi connection plus data transfering to the laptop
+  
+  2015-11-02
+  coding animometre - must find voltage output and convert it to m/s wind speed
+  * 0.4v = 0m/s and 2.0v = 36.5m/s
+  
+  2015-11-03
+  connecting raspberry pi to laptop
+  *connect pi to laptop with eathernet cable
+  *scan ip with laptop (range= between 192.168.137.1 - 192.168.137.200)
+  *get pi's ip
+  *open putty insert pi's ip and open (if you want to see the pi's screen and not just the terminal launch xming and in the pi open ssh and enable forwarding)
+  *loginto pi username = pi password = raspberry
+  *cd Desktop/
+  *mkdir rover (already done)
+  *nano test.py (open editor)
+  *to test code - sudo python test.py
+  *probleme- when finding laptops ip use ipconfig in comand prompt but make sure you use the ipv4 adress
+  
+  2015-11-06
+  mounting usb drive to raspberry pi
+  - type tail -f/var/logmessages
+  on one line look for something like sdal, sdbl, sda2 etc
+  that measn the device is located in /dev/sdal
+  create directory under /media so you can mount the drive
+  sudo mkdir /media/usbstick
+  
