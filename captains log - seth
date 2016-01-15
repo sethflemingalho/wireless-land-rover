@@ -53,5 +53,11 @@ testing BME280 with arduino,
 set code to line 32
 Adafruit_BME280 bme(BME_CS, BME_....
 
-2015
+2015-11-19
+installing Arduino on the pi 
+sudo apt-get install arduino
   
+2015-11-23
+got motors working with relay shield, 
+*delay must be set over 1200milliseconds or the relay will have difficulty connecting
+arduino has problmes having code uploaded to it throught the pi - reason unknown
