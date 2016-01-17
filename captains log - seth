@@ -67,3 +67,4 @@ arduino has problmes having code uploaded to it throught the pi - reason unknown
 pi noir
 enable camera
 raspistill -o cam_test.jpg to take pic
+gpicview nameofpic.jpg to see it
