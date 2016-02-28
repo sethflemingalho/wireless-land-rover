@@ -80,3 +80,8 @@ https://www.raspberrypi.org/help/camera-module-setup/
 2016-02-08
 testing rover - everything functional save animometre and soil sampler
 idea for sampler - nasa's curiosity bucket scoop
+
+2016-02-27
+replace motors for wheels with new better motors
+taking appart scale to examine and integrate into rover
+setting up rover with new pi
